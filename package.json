@@ -12,7 +12,6 @@
     "@types/jest": "^27.5.2",
     "@types/node": "^16.18.98",
     "@types/react-dom": "^18.3.0",
-    "mightymeld": "^0.2.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.23.1",
@@ -21,8 +20,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start:mightymeld": "react-app-rewired start",
     "start": "react-scripts start",
+    "start:mightymeld": "react-app-rewired start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -48,6 +47,7 @@
   "devDependencies": {
     "@types/react": "^18.3.3",
     "customize-cra": "^1.0.0",
+    "mightymeld": "^0.2.2",
     "react-app-rewired": "^2.2.1"
   }
 }
