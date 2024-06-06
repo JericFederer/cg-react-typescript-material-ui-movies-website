@@ -1,11 +1,11 @@
 import React from 'react'
 
+import Layout from '../../Layout'
+
 const TvSeries = () => {
   return (
-    <div>
-      TvSeries
-    </div>
+    <Layout>TvSeries</Layout>
   )
 }
 
-export default TvSeries
+export default TvSeries;
