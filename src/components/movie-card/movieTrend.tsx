@@ -31,8 +31,9 @@ const MovieTrendCard = ({ movie }: MovieTrendCardProps) => {
       <CardContent
         style={{
           padding: 0,
+          marginBottom: '20%',
           position: 'relative',
-          overflowX: 'scroll',
+          overflowX: 'hidden',
           display: 'flex',
         }}
       >
@@ -48,7 +49,7 @@ const MovieTrendCard = ({ movie }: MovieTrendCardProps) => {
           left={ 0 }
           right={ 0 }
           bottom={ 0 }
-          bgcolor='rgba(0,0,0,0.6)'
+          bgcolor='rgba(0,0,0,0.5)'
           borderRadius='8px'
         />
         
@@ -61,7 +62,11 @@ const MovieTrendCard = ({ movie }: MovieTrendCardProps) => {
           right={ 0 }
           p={ 4 }
         >
-          <Grid container alignItems='center' spacing={ 1 }>
+          <Grid
+            container
+            alignItems='center'
+            spacing={ 1 }
+          >
             <Grid item>
               <Typography
                 fontSize={ 10 }
@@ -133,8 +138,7 @@ const MovieTrendCard = ({ movie }: MovieTrendCardProps) => {
           style={{
             position: 'absolute',
             top: 0,
-            left: 0,
-            right: 0,
+            left: 9,
             display: 'flex',
             justifyContent: 'flex-end',
             padding: '16px',

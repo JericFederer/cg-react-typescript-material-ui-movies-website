@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useCallback, useContext } from 'react';
 import { Box, Card, CardContent, Typography, Grid } from '@mui/material';
 
 import { MovieDataType } from '../../assets/data';
@@ -25,7 +25,12 @@ const MovieCard = ({ movie }: MovieCardProps) => {
   return (
     <Card
       variant='outlined'
-      sx={{ bgcolor: 'transparent', color: Colors.accent02, my: 3, border: 'none' }}
+      sx={{
+        bgcolor: 'transparent',
+        color: Colors.accent02,
+        my: 3,
+        border: 'none'
+      }}
     >
       <CardContent sx={{ p: 0, position: 'relative' }}>
         <Grid container spacing={ 1 }>
@@ -33,7 +38,7 @@ const MovieCard = ({ movie }: MovieCardProps) => {
             <img
               src={ movie.thumbnail.regular.large }
               alt=''
-              style={{ width: 400, height: 180, borderRadius: 8 }}
+              style={{ width: 300, height: 180, borderRadius: 8 }}
             />
           </Grid>
           
@@ -48,6 +53,7 @@ const MovieCard = ({ movie }: MovieCardProps) => {
                   { movie.year }
                 </Typography>
               </Grid>
+
               <Grid item>
                 <Box
                   sx={{
@@ -58,6 +64,7 @@ const MovieCard = ({ movie }: MovieCardProps) => {
                   }}
                 />
               </Grid>
+
               <Grid item>
                 <img
                   src={ movie.category === 'Movies' ? moviesIcon : tvSeriesIcon }
@@ -66,6 +73,7 @@ const MovieCard = ({ movie }: MovieCardProps) => {
                   height={ 16 }
                 />
               </Grid>
+
               <Grid item>
                 <Typography
                   fontSize={ 10 }
@@ -75,6 +83,7 @@ const MovieCard = ({ movie }: MovieCardProps) => {
                   { movie.category }
                 </Typography>
               </Grid>
+
               <Grid item>
                 <Box
                   sx={{
@@ -85,6 +94,7 @@ const MovieCard = ({ movie }: MovieCardProps) => {
                   }}
                 />
               </Grid>
+              
               <Grid item>
                 <Typography
                   fontSize={ 10 }
@@ -101,18 +111,23 @@ const MovieCard = ({ movie }: MovieCardProps) => {
           </Grid>
           
           <Grid
-            item xs={ 2 }
+            item xs={ 1 }
             sx={{
               position: 'absolute',
               top: 0,
-              right: 0
+              left: {
+                sm: '13%',
+                md: '12%',
+                xs: '12%',
+                lg: '11%'
+              }
             }}
           >
             <Box
               sx={{
                 display: 'flex',
                 justifyContent: 'flex-end',
-                alignItems: 'center',
+                alignItems: 'start',
                 p: '1rem',
               }}
             >

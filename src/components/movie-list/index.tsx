@@ -10,15 +10,17 @@ interface MovieListProps {
 
 const MovieList = ({ recommendedList }: MovieListProps) => {
   return (
-    <Box sx={{
-      display: 'flex',
-      gap: 2,
-      overflowX: "scroll"
-    }}>
+    <Grid container spacing={ 2 }>
       { 
         recommendedList.map((movie) => {
           return (
-            <Grid item key={ movie.id }>
+            <Grid
+              item key={ movie.id }
+              xs={ 12 }
+              sm={ 6 }
+              md={ 4 }
+              lg={ 3 }
+            >
               <Paper
                 elevation={ 0 }
                 sx={{
@@ -31,7 +33,7 @@ const MovieList = ({ recommendedList }: MovieListProps) => {
           )
         })
       }
-    </Box>
+    </Grid>
   );
 };
 
