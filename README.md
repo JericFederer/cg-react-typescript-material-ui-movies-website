@@ -1,3 +1,8 @@
+#  UI for a movie-database-website created using TypeScript, React and Material UI
+
+This site is using Context Api for sharing data between components and useReducer Hooks to manage the state.
+The UI of this opplication is using Material UI with TypeScript.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
