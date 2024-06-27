@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Grid, Paper } from '@mui/material';
+import { Grid, Paper } from '@mui/material';
 
 import { MovieDataType } from '../../assets/data';
 import MovieCard from '../movie-card/index';

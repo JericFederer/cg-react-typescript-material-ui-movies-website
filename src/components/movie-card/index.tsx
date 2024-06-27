@@ -1,4 +1,4 @@
-import React, { useCallback, useContext } from 'react';
+import { useContext } from 'react';
 import { Box, Card, CardContent, Typography, Grid } from '@mui/material';
 
 import { MovieDataType } from '../../assets/data';
