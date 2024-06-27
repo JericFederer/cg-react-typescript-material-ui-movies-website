@@ -23,3 +23,5 @@ yarn-debug.log*
 yarn-error.log*
 
 mightymeld.secrets
+# Local Netlify folder
+.netlify
