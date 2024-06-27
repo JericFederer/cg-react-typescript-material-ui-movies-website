@@ -1,3 +1,7 @@
+# Demo Site Link
+
+https://jeric-ts-react-mui-movie-ui-site.netlify.app/
+
 #  UI for a movie-database-website created using TypeScript, React and Material UI
 
 This site is using Context Api for sharing data between components and useReducer Hooks to manage the state.
