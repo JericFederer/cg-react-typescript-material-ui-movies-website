@@ -58,7 +58,7 @@ export const moviesData = [
     category: "Movie",
     rating: "PG",
     isBookmarked: false,
-    isTrending: true,
+    isTrending: false,
   },
   {
     id: "3",
@@ -78,7 +78,7 @@ export const moviesData = [
     category: "TV Series",
     rating: "E",
     isBookmarked: false,
-    isTrending: true,
+    isTrending: false,
   },
   {
     id: "4",
@@ -98,7 +98,7 @@ export const moviesData = [
     category: "Movie",
     rating: "18+",
     isBookmarked: false,
-    isTrending: true,
+    isTrending: false,
   },
   {
     id: "5",
@@ -134,7 +134,7 @@ export const moviesData = [
     category: "Movie",
     rating: "E",
     isBookmarked: false,
-    isTrending: false,
+    isTrending: true,
   },
   {
     id: "7",
@@ -166,7 +166,7 @@ export const moviesData = [
     category: "Movie",
     rating: "18+",
     isBookmarked: true,
-    isTrending: false,
+    isTrending: true,
   },
   {
     id: "9",
@@ -182,7 +182,7 @@ export const moviesData = [
     category: "Movie",
     rating: "E",
     isBookmarked: false,
-    isTrending: false,
+    isTrending: true,
   },
   {
     id: "10",
@@ -246,7 +246,7 @@ export const moviesData = [
     category: "TV Series",
     rating: "PG",
     isBookmarked: false,
-    isTrending: false,
+    isTrending: true,
   },
   {
     id: "14",
@@ -262,7 +262,7 @@ export const moviesData = [
     category: "TV Series",
     rating: "E",
     isBookmarked: true,
-    isTrending: false,
+    isTrending: true,
   },
   {
     id: "15",
@@ -358,7 +358,7 @@ export const moviesData = [
     category: "Movie",
     rating: "E",
     isBookmarked: false,
-    isTrending: false,
+    isTrending: true,
   },
   {
     id: "21",
